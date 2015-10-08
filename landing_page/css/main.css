@@ -1,0 +1,226 @@
+
+/*-------------------------------------------  general -------------------------------------------------------*/
+body{
+	font-size: 62.5%;
+	font-family: helvetica, arial, sans-serif;
+	color:#1D1D1F; /*changes color of the whole text*/
+	margin-top: 0;
+	background-image: url(../img/background.png);
+}
+#wrapper{
+	width:960px;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding-left: 1%;
+	padding-right: 1%;
+	-webkit-box-shadow: 0px 0px 5px #ececec;
+	-moz-box-shadow:    0px 0px 5px #ececec;
+	box-shadow:         0px 0px 5px #ececec;
+	background-color: #B8B8B8;
+
+}
+/*-------------------------------------------  header -------------------------------------------------------*/
+
+header{
+	border-bottom: 1px solid #bbb8bf; /*changes color of border under project name*/
+}
+h1{
+	margin-top: 0;
+	padding-top: 40px;
+	text-align: center;
+	font-size: 5em;
+	font-family: 'Nunito', sans-serif;
+}
+h2{
+	margin-top: 20px;
+	margin-left: 1%;
+	font-size: 2em;
+	font-family: 'Nunito', sans-serif;
+}
+
+/*-------------------------------------------  table -------------------------------------------------------*/
+
+table{
+	background: #f7f7f9;  /*changes color of the background of the table*/
+	width: 100%;
+	border-radius: 30px;
+	box-shadow: 2px 2px 6px;
+	padding-bottom: 2px;
+	padding-right: 2px;
+}
+tr{
+	display: table-row;
+	border-color: inherit;
+}
+.odd{
+	background: #ececec; /*changes color of the stripes table*/
+}
+th{
+	text-align: left;
+	padding: 1.75em 1.75em;
+	font-weight: bold;
+	font-size: 120%;
+	color: #545257;  /*changes color of table hd text*/
+	background: #A4A5A7; /*changes color of table hd background*/
+	border-radius: 30px;
+}
+th:first-child{
+	/*border-right: 1px solid #6a7680;*/
+}
+td{
+	padding: 2em 2em;
+	width: 69%;
+	border-radius: 30px;
+	border: 2px solid #bbbcc0;
+}
+td:first-child{
+	/*border-right: 1px solid #6a7680;*/
+
+}
+
+td, th {
+	box-shadow: 1px 1px 2px;
+}
+
+/*-------------------------------------------  top section-------------------------------------------------------*/
+
+.main{
+
+	overflow: auto;
+	/*border-bottom: 1px solid #bbb8bf;*/
+}
+.main p{
+	width: 68%;
+	float: left;
+	font-size: 1.8em;
+	text-align: justify;
+
+}
+.main figure{
+	float: right;
+	margin: 15px 0 20px 0;
+	width: 30%;
+
+}
+figure img{
+	width: 100%;
+}
+.sec{
+	clear: both;
+	margin-top: 40px;
+	
+}
+
+/*-------------------------------------------  links -------------------------------------------------------*/
+a{
+	text-decoration: none;
+	font-size: 1.3em;
+	color: #475a80;  /*changes color of the links*/
+}
+a:hover{
+	color: orange;
+	font-weight: bold;
+}
+/*-------------------------------------------  footer-------------------------------------------------------*/
+footer{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	width: 90%;
+}
+/* ------------------------------------------- Media Queries -------------------------------------------------------*/
+
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		#wrapper{
+			width:98%;
+		}	
+	}
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+		#wrapper{
+			width:98%;
+
+		}
+		.main figure{
+			width: 35%;
+		}
+		.main figure img{
+			width: 100%;	
+		}
+		.main p{
+			width: 60%;	
+		}
+		td{
+			width: 50%;
+		}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		#wrapper{
+			width: 95%;
+	
+		}
+		.main, header, h2{
+			padding-left: 1%;
+			padding-right: 1%;
+		}
+		.main figure{
+			width: 100%;
+			float: right;
+		}
+		.main p{
+			width: 98%;
+		}
+		.main figure img{
+			width: 100%;
+		}
+		td{
+			width: 50%;
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		#wrapper{
+			width: 98%;
+			min-width: 480px;
+			max-width: 767px;
+		}
+		.main p{
+			width: 100%;
+		}
+		td{
+
+			width: 50%;
+		}
+	}
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		#wrapper{
+			width: 96%;
+		}
+		figure {
+			display: none;
+		}
+		figcaption{
+			display: none;
+		}
+		.sec{
+			margin-top: 10px;
+		}
+		tr{
+			height: 44px;
+			line-height: 44px;
+		}
+		td{
+			width: 50%;
+			
+		}
+	}
+
+
